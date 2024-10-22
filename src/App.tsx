@@ -2,7 +2,7 @@ import { usePrivy } from "@privy-io/react-auth";
 import "./styles.css";
 
 export default function App() {
-  const { user, login, linkDiscord, authenticated, ready, logout } = usePrivy();
+  const { login, authenticated, ready } = usePrivy();
   return (
     <div className="App">
       {ready && authenticated ? (

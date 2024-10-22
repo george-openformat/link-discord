@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <PrivyProvider appId={process.env.PRIVY_APP_ID}>
+    <PrivyProvider appId={process.env.PRIVY_APP_ID as string}>
       <App />
     </PrivyProvider>
   </React.StrictMode>
